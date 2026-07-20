@@ -1,11 +1,17 @@
 PYTHON ?= python
 
+ifeq ($(OS),Windows_NT)
+VENV_PYTHON ?= .venv/Scripts/python.exe
+else
+VENV_PYTHON ?= .venv/bin/python
+endif
+
 .PHONY: bootstrap check lint test validate generate sim-smoke sim-full status
 
 bootstrap:
 	$(PYTHON) -m venv .venv
-	./.venv/Scripts/python.exe -m pip install --upgrade pip
-	./.venv/Scripts/python.exe -m pip install -e ".[dev]"
+	$(VENV_PYTHON) -m pip install --upgrade pip
+	$(VENV_PYTHON) -m pip install -e ".[dev]"
 
 check: lint test generate validate sim-smoke
 
@@ -13,7 +19,7 @@ lint:
 	$(PYTHON) -m ruff check .
 
 test:
-	$(PYTHON) -m pytest
+	$(PYTHON) -m pytest -p no:cacheprovider
 
 validate:
 	$(PYTHON) tools/validate_manifest.py

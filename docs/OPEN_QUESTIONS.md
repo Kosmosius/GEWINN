@@ -15,3 +15,7 @@ repository bootstrap.
 9. Rebuild character sheet and referee screen from current fields.
 
 No new design question has been resolved by this bootstrap.
+
+## Operational follow-up
+
+- Confirm the intended repository license with the rights holder. No license file was present in the imported repository, so none has been invented.
