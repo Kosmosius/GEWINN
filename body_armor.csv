@@ -1,0 +1,17 @@
+Body Armor,AC,Slashing,Piercing,Bludgeoning,Shot,Burning,Shocking,Toxic,Freezing,Weight_lb,Slots,Cost,Notes
+Clothing,0,0,0,0,0,0,0,0,0,0,0,—,No protection.
+Thick clothing / jack,0,1,0,0,0,0,0,0,0,4,1,5s,Concealable.
+Padded jack,1,2,1,2,0,0,0,0,0,10,3,12s,Cheap textile armor.
+Gambeson / arming doublet,1,3,2,2,0,0,0,0,0,12,4,15s,Under-armor; hot.
+Buff coat,1,4,1,1,0,0,0,0,0,9,3,£1 5s,Strong vs cuts; social/military leather coat.
+Mail shirt,1,5,2,1,0,0,0,0,0,18,6,£3,Flexible; noisy.
+Mail hauberk,2,6,3,1,0,0,0,0,0,24,8,£3 10s,Broad mail coverage; noisy.
+Scale armor,2,5,3,2,0,0,0,0,0,21,7,£3 10s,Fantasy-friendly; catches blows.
+Coat of plates,2,6,4,2,1,0,0,0,0,21,7,£4,Archaic plate; good coverage.
+Brigandine / jack of plate,3,8,5,3,1,0,0,0,0,24,8,£5,Adventurer plate; good coverage.
+Cuirass / breastplate,3,7,4,3,4,0,0,0,0,15,5,£5 5s,Shot-aware torso plate.
+Munition plate,4,8,6,4,4,0,0,0,0,30,10,£7 10s,Military issue; Poor Fit risk.
+Half armor,5,9,7,4,4,0,0,0,0,40,13,£10,Heavy military kit.
+Three-quarter armor,6,10,8,5,5,0,0,0,0,50,17,£14,Cavalry/elite war armor.
+Full harness,7,11,8,5,5,0,0,0,0,24,8,£18,"Fitted elite body armor; add helmet, arms, legs, and shield separately."
+Jousting plate,6,12,9,6,5,0,0,0,0,35,12,£25,Tournament armor; not normal adventuring gear.

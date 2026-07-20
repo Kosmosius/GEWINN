@@ -1,0 +1,8 @@
+Leg Armor,AC,Slashing,Piercing,Bludgeoning,Shot,Burning,Shocking,Toxic,Freezing,Weight_lb,Slots,Cost,Notes
+Shoes / boots,0,0,0,0,0,0,0,0,0,2.5,1,4s–6s,Normal footwear.
+Leather boots,0,1,0,0,0,0,0,0,0,3,1,4s,Light protection.
+Padded legs,0,1,1,1,0,0,0,0,0,4,1,12s,Textile.
+Mail chausses,0,2,1,0,0,0,0,0,0,12,4,£2 5s,Heavy/noisy.
+Sabatons,0,1,1,1,0,0,0,0,0,1.5,1,£1,Foot armor.
+Plate greaves,1,2,1,1,1,0,0,0,0,5,2,£2 10s,Lower leg armor.
+Full plate legs,1,2,1,1,1,0,0,0,0,12,4,£4,Full leg defense.

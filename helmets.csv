@@ -1,0 +1,16 @@
+Helmet,AC,Slashing,Piercing,Bludgeoning,Shot,Burning,Shocking,Toxic,Freezing,Weight_lb,Slots,Cost,Notes
+Cervelliere / skullcap,0,1,1,1,0,0,0,0,0,2.5,1,8s,Light cap.
+Mail coif,0,2,1,0,0,0,0,0,0,5.5,2,£1,Flexible; noisy.
+Spangenhelm,1,2,1,1,0,0,0,0,0,4,1,18s,Archaic/fantasy.
+Kettle hat,1,2,1,2,0,0,0,0,0,4,1,16s,Practical infantry helmet.
+Morion,1,2,2,1,1,0,0,0,0,3.5,1,£1 5s,Early-modern.
+Barbute,1,3,2,1,0,0,0,0,0,5,2,£1 10s,Open face.
+Burgonet,1,3,2,1,1,0,0,0,0,4.5,2,£1 15s,Cavalry/infantry.
+Bascinet,1,3,2,1,0,0,0,0,0,5,2,£1 15s,Medieval.
+Sallet,1,3,2,1,1,0,0,0,0,4.5,2,£2,Good coverage.
+Houndskull bascinet,2,3,2,2,1,0,0,0,0,6.5,2,£3,Visored; poor awareness.
+Great helm,1,4,2,2,1,0,0,0,0,6.5,2,£2 10s,Poor awareness.
+Great bascinet,2,4,2,2,1,0,0,0,0,7.5,3,£3 5s,Heavy defense.
+Armet / close helm,2,3,2,2,1,0,0,0,0,7,2,£4,Awareness/social penalty.
+Frog-mouth helm,1,5,3,2,1,0,0,0,0,11,4,£4,Tournament; poor awareness.
+Lobster-tailed pot,1,3,2,1,1,0,0,0,0,5,2,£2,Cavalry.

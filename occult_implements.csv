@@ -1,0 +1,7 @@
+Rating,Clean_INT,Hands,Range_ft,Reload_after_ranged,Weight_lb,Slots,Cost,Access,Available_Types,Notes
+1d4,+0,1,30,1,8,3,£4,Restricted,Burning; Shocking; Toxic; Freezing,Same implement may attack in melee without reload; may attack in melee while ranged mode is unloaded.
+1d6,+0,1,30,1,12,4,£9,Restricted,Burning; Shocking; Toxic; Freezing,Same implement may attack in melee without reload; may attack in melee while ranged mode is unloaded.
+2d4,+2,2,60,2,16,5,£8,Restricted,Burning; Shocking; Toxic; Freezing,Same implement may attack in melee without reload; may attack in melee while ranged mode is unloaded.
+1d8,+0,1,30,1,16,5,£16,Restricted; institutional seller,Burning; Shocking; Toxic; Freezing,Same implement may attack in melee without reload; may attack in melee while ranged mode is unloaded.
+2d6,+2,2,60,2,24,8,£18,Restricted; institutional seller,Burning; Shocking; Toxic; Freezing,Same implement may attack in melee without reload; may attack in melee while ranged mode is unloaded.
+3d4,+3,2,90,3,24,8,£12,Restricted; institutional seller,Burning; Shocking; Toxic; Freezing,Same implement may attack in melee without reload; may attack in melee while ranged mode is unloaded.

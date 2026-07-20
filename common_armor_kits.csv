@@ -1,0 +1,10 @@
+Kit,Pieces,Cost,Weight_lb,Slots,AC_melee,AC_missile,Slashing,Piercing,Bludgeoning,Shot,Notes
+Padded traveler,Padded jack; Kettle hat; Buckler,£1 16s,16.5,5,4,2,5,3,4,0,Cheap survival.
+Mail soldier,Mail hauberk; Mail coif; Mail sleeves/voiders; Mail chausses; Heater shield,£9 10s,52.5,18,5,4,14,8,2,0,Sword-proof infantry; heavy.
+Brigandine sergeant,Brigandine; Sallet; Plate arms; Plate greaves; Target/targe,£14,44.5,15,8,8,17,10,7,4,Adventurer tank.
+Cuirassier,Cuirass; Morion; Plate arms; Plate greaves; Rotella,£14 5s,36.5,12,9,9,15,10,7,8,Gun-era armor.
+Munition pikeman,Munition plate; Morion; Padded sleeves; Padded legs,£9 17s,40.5,13,5,5,12,10,7,5,Efficient war kit; Poor Fit.
+Half-armored man-at-arms,Half armor; Burgonet; Plate arms; Plate greaves; Heater shield,£19,61.5,21,11,10,18,13,8,7,Elite field fighter; overloaded without support.
+Three-quarter cavalry,Three-quarter armor; Burgonet; Plate arms; Full plate legs,£23 5s,73.5,25,9,9,17,12,8,8,Cavalry/war; overloaded on foot.
+Full harness knight,Full harness body; Armet/close helm; Plate arms; Full plate legs,£29 10s,50,16,11,11,18,12,9,8,Elite tank.
+Full harness + heater,Full harness knight; Heater shield,£30 15s,55,18,14,13,20,14,10,8,Walking fortress.

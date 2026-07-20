@@ -1,0 +1,14 @@
+Weapon,Dice,Type,Weight_lb,Slots,Cost,Reload,Notes
+Sling,1d4,Bludgeoning,0.25,0,2d,—,Cheap; concealable.
+Javelin,1d6,Piercing,2,1,6d,—,Thrown.
+Bow,1d6,Piercing,1.5,1,3s,—,Basic bow.
+Short bow,2d4,Piercing,1.5,1,4s,—,Compact bow.
+Composite bow,3d4,Piercing,2,1,12s,—,Regional/mounted bow.
+Longbow,4d4,Piercing,2,1,15s,—,"Heavy Draw; STR handles dice, WLL attacks."
+Crossbow,1d8,Piercing,7,2,£1,1,Ignores STR handling.
+Arbalest,2d8,Piercing,10,3,£2 10s,2,Heavy; ignores STR handling.
+Handgonne,1d12,Shot,9,3,£1 10s,2,Loud; crude; misfire-prone.
+Pistol,1d12,Shot,3,1,£3,2,Sidearm; mounted/social weapon.
+Arquebus / caliver,2d8,Shot,10,3,£2 10s,2,Loud; smoke; military firearm.
+Musket,2d12,Shot,12,4,£4,3,Loud; smoke; armor-relevant.
+Rifle,3d12,Shot,10,3,£7,4,Optional late/elite firearm.

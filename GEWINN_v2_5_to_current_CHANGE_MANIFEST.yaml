@@ -1,0 +1,162 @@
+metadata:
+  title: GEWINN v2.5 to Current Working Rules Migration Manifest
+  baseline: GEWINN v2.5 designer-authored document
+  scaffold: GEWINN v5.0 full-system draft
+  status: working canonical migration; open TODOs are explicitly marked
+  date: '2026-07-20'
+source_priority:
+- This manifest and accompanying changelog
+- Latest explicit designer decisions in the project conversation
+- Corrected equipment CSVs in this bundle
+- GEWINN v5.0 for procedures not superseded here
+- GEWINN v2.5 for voice, identity, discrete wounds, attribution, and untouched content
+- Earlier v3-v6 experiments as non-authoritative history only
+global_deletions:
+- Scale and Draw Scale terminology
+- Arms Training and Mastery as mechanical progress tracks
+- Breach
+- Cut / Point / Crush terminology
+- Pistol-proof and range-dependent musket-proof rules
+- Slots representing awkwardness, heat, length, visibility, noise, legality, or social
+  burden
+- Separate Growth-eligible Stress bookkeeping
+- Generic mana, magic points, caster level, Arcane Circle, Holy Circle, Prepared Load,
+  Source Strain, Relic Strain, Push, Disturbance, Transcendent Exertion, Force Through,
+  and Petition mechanics
+- Reactive per-hit relic DR rolls
+- Non-stacking relic rules
+- Separate purchases for half-sword, mordhau, and unmounted lance modes
+global_replacements:
+  FAI: FTH (abbreviation); keep Faith in prose
+  Cut: Slashing
+  Point: Piercing
+  Crush: Bludgeoning
+  damage_types:
+  - Slashing
+  - Piercing
+  - Bludgeoning
+  - Shot
+  - Burning
+  - Shocking
+  - Toxic
+  - Freezing
+  slot_definition: Slots represent weight only. 1 slot is approximately 3 lb. Use
+    listed rounded values.
+  attack_bonus: Relevant ability modifier plus situation only; no Arms Training.
+canonical_mechanics:
+  ability_generation: 3d6 in order for STR, INT, FTH, WLL by default.
+  modifier_table:
+    3-11: 0
+    12-13: 1
+    14-15: 2
+    16-17: 3
+    18-19: 4
+    '20': 5
+  ability_check: 1d20 <= relevant ability when risk matters.
+  player_attack: 1d20 + relevant ability modifier >= enemy AC.
+  enemy_attack: Referee rolls retained Impact; PC rolls d20 <= AC.
+  natural_attack_1: Miss; gain Stress only if the failed dangerous roll meets the
+    general Stress trigger.
+  natural_attack_20: Hit; reduce matching DR by 2 or choose a supported positional
+    maneuver.
+  natural_ac_1: Critical Defense.
+  natural_ac_20: Attack lands; reduce matching DR by 2 or apply supported disaster.
+  opposed_ties: Defender/status quo wins.
+  initiative: Attacks roll retained Impact. Non-attacks roll 1d4. Damaging spells
+    use retained Impact; non-damaging spells/miracles roll 1d8 per spell level.
+  muscle_handling: Clean if damage-dice count <= max(1, STR modifier); otherwise Attack
+    and Impact are disadvantaged.
+  implement_handling: Clean if damage-dice count <= max(1, INT modifier); otherwise
+    Attack and Impact are disadvantaged.
+  relic_handling: Qualified if damage-dice count <= max(1, FTH modifier); otherwise
+    no worn or bestowed benefit.
+  proofing: Body armor only; +3 Shot DR, +6 lb, +2 slots, +£3; no range clauses; does
+    not stack.
+  stress: All Stress is one kind and may contribute to Growth after Relief. Do not
+    grant Stress for trivial, staged, safe, or farmed situations.
+  advancement: Raise ability X to X+1 by relieving and converting X Stress through
+    fitting downtime and fictional support. No parallel training track.
+  control: Free -> Compromised -> Controlled; opposed STR versus STR or WLL; ties
+    favor defender.
+  gap_strike: Controlled target; advantage; 1d6+2 Piercing; ignore armor and shield
+    DR; any wound minimum Serious.
+  spell_memory: INT spell-level capacity equals INT modifier; FTH miracle-level capacity
+    equals FTH modifier; +0 means zero; duplicate remembered instances permitted.
+  spell_use: Remembered instance is expended when used. No general casting roll. Use
+    one attack roll, one target Defense, or no roll, never both attack and Defense
+    for one ordinary effect.
+  spell_recovery: Safe access to required source restores and rearranges remembered
+    instances.
+  spell_recharge: Full action; 1d4 initiative in combat; restore one spent instance
+    by taking level-based wound; no automatic Stress.
+  recharge_severity:
+    1: Minor
+    2: Serious
+    3: Grave
+    4: Mortal
+    5: Catastrophic
+  recharge_wound_type: Fixed by Working; damaging Working normally uses its damage
+    type.
+  recharge_healing: Recharge wound ignores armor/DR and cannot be reduced, removed,
+    transferred, or downgraded by magic; ordinary treatment and recovery apply.
+  boss_magic: Named targets receive one Defense against immediate encounter removal.
+    Bosses require written vulnerability/setup.
+  implement_modes: Every implement can attack in melee or at listed range. Ranged
+    use gives Reload N. Melee use requires no reload and remains available while ranged
+    mode is unloaded.
+  relic_worn: Flat matching DR equal to S; always active when worn by qualified bearer;
+    stacks normally.
+  relic_bestowed: Action; roll NdS once; result is flat matching DR until target next
+    reaches safe rest; relic stops protecting wearer while bestowed; stacks normally.
+data_files:
+- melee_weapons.csv
+- ranged_weapons.csv
+- body_armor.csv
+- helmets.csv
+- arms_armor.csv
+- leg_armor.csv
+- shields.csv
+- proofing.csv
+- common_armor_kits.csv
+- occult_implements.csv
+- sacred_relics.csv
+open_todos:
+- Restore/adapt the six v2.5 discrete wound tables without restoring wound points.
+- Write final Shot discrete wound table.
+- Write final Freezing discrete wound table.
+- Tag each discrete wound result with Minor/Serious/Grave/Mortal/Catastrophic for
+  current procedures.
+- Finalize curated spell and miracle list; do not import every classic spell unedited.
+- Finalize memory-expanding source items; they may exist but no standard purchasable
+  ladder is settled.
+- Recalculate all starting packages and examples from corrected prices and slots.
+- Decide explicitly whether Eureka and Divine Favour remain; current magic and equipment
+  do not require them.
+- Rebuild character sheet and referee screen from current fields.
+acceptance_greps:
+  must_not_find:
+  - Arms Training
+  - 'Mastery:'
+  - Weapon Scale
+  - Draw Scale
+  - Cut DR
+  - Point DR
+  - Crush DR
+  - Pistol-proof
+  - Musket-proof
+  - Growth-eligible Stress
+  - Source Strain
+  - Relic Strain
+  - Prepared Load
+  - Arcane Circle
+  - Holy Circle
+  - Transcendent Exertion
+  must_find:
+  - Slashing
+  - Piercing
+  - Bludgeoning
+  - Freezing
+  - Reload N
+  - recharge wound
+  - Proofed
+  - weight only

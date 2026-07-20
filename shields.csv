@@ -1,0 +1,8 @@
+Shield,AC,Slashing,Piercing,Bludgeoning,Shot,Burning,Shocking,Toxic,Freezing,Weight_lb,Slots,Cost,Notes
+Buckler,+2 melee,1,1,0,0,0,0,0,0,2.5,1,8s,"No sacrifice vs guns, lances, huge monsters, siege, or Great weapons."
+Heater shield,+3 melee/+2 missile,2,2,1,0,0,0,0,0,5,2,£1 5s,Standard shield.
+Kite shield,+3 melee/+2 missile,2,2,1,0,0,0,0,0,8,3,£1 5s,Mounted/formation shield.
+Target / targe,+2 melee/+2 missile,2,1,1,0,0,0,0,0,4,1,£1,Practical light shield.
+Rotella,+3 melee/+3 missile,2,2,1,1,0,0,0,0,6,2,£1 15s,"Broad, visible."
+Tower shield,+4 melee/+3 missile,3,3,2,1,0,0,0,0,15,5,£2 10s,Formation/cover.
+Pavise,cover,4,4,3,2,0,0,0,0,12,4,£2 10s,"Set as cover, not melee shield."
