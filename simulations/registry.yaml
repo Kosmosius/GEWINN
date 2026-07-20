@@ -1,0 +1,20 @@
+simulations:
+  - id: bootstrap-reproducibility-smoke
+    title: Deterministic bootstrap infrastructure smoke test
+    status: baseline
+    source_script: simulations/src/smoke.py
+    assumptions:
+      - This is a reproducibility harness, not a GEWINN balance or combat model.
+      - It samples a fixed pseudo-random sequence and records a canonical data hash prefix.
+    seed: 25072026
+    trials: 24
+    rules_source: Canonical equipment data only; no rules procedure is modeled.
+    rules_commit: e29e1a9
+    input_data:
+      - data/equipment/melee_weapons.csv
+      - simulations/configs/smoke.json
+    summary_outputs:
+      - stdout JSON only; no tracked result is produced
+    raw_artifacts: []
+    regenerate_command: python simulations/src/smoke.py --config simulations/configs/smoke.json
+    notes: Added during bootstrap because no imported simulation source/config/result was present.
