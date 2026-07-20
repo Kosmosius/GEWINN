@@ -1,0 +1,3 @@
+# relative-path<TAB>term<TAB>reason
+# Add only specific, documented historical-discussion exceptions. Migration and archive
+# materials are excluded from the scanner rather than broadly allowlisted.

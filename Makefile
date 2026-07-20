@@ -26,7 +26,7 @@ generate:
 	$(PYTHON) tools/generate_tables.py
 
 sim-smoke:
-	$(PYTHON) simulations/src/smoke.py --config simulations/configs/smoke.yaml
+	$(PYTHON) simulations/src/smoke.py --config simulations/configs/smoke.json
 
 sim-full:
 	@echo "No maintained full rules simulation is registered yet. See simulations/README.md."

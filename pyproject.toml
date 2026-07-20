@@ -13,6 +13,13 @@ dev = [
 ]
 simulation = []
 
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = []
+
 [tool.pytest.ini_options]
 testpaths = ["tests", "simulations/tests"]
 addopts = "-ra"
@@ -24,3 +31,4 @@ extend-exclude = ["archive", "artifacts", "manuscript/generated"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP"]
+ignore = ["E501"]

@@ -14,6 +14,7 @@ venv/
 .vscode/
 build/
 dist/
+*.egg-info/
 generated/
 artifacts/raw/
 artifacts/tmp/
