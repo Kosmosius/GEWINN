@@ -109,17 +109,17 @@ canonical_mechanics:
   relic_bestowed: Action; roll NdS once; result is flat matching DR until target next
     reaches safe rest; relic stops protecting wearer while bestowed; stacks normally.
 data_files:
-- melee_weapons.csv
-- ranged_weapons.csv
-- body_armor.csv
-- helmets.csv
-- arms_armor.csv
-- leg_armor.csv
-- shields.csv
-- proofing.csv
-- common_armor_kits.csv
-- occult_implements.csv
-- sacred_relics.csv
+- data/equipment/melee_weapons.csv
+- data/equipment/ranged_weapons.csv
+- data/equipment/body_armor.csv
+- data/equipment/helmets.csv
+- data/equipment/arms_armor.csv
+- data/equipment/leg_armor.csv
+- data/equipment/shields.csv
+- data/equipment/proofing.csv
+- data/equipment/common_armor_kits.csv
+- data/magic/occult_implements.csv
+- data/magic/sacred_relics.csv
 open_todos:
 - Restore/adapt the six v2.5 discrete wound tables without restoring wound points.
 - Write final Shot discrete wound table.

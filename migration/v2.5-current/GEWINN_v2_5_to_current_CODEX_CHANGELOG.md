@@ -64,17 +64,19 @@ GEWINN/
 │   ├── 11-monsters-conversion.md
 │   └── 12-reference.md
 ├── data/
-│   ├── melee_weapons.csv
-│   ├── ranged_weapons.csv
-│   ├── body_armor.csv
-│   ├── helmets.csv
-│   ├── arms_armor.csv
-│   ├── leg_armor.csv
-│   ├── shields.csv
-│   ├── proofing.csv
-│   ├── common_armor_kits.csv
-│   ├── occult_implements.csv
-│   └── sacred_relics.csv
+│   ├── equipment/
+│   │   ├── melee_weapons.csv
+│   │   ├── ranged_weapons.csv
+│   │   ├── body_armor.csv
+│   │   ├── helmets.csv
+│   │   ├── arms_armor.csv
+│   │   ├── leg_armor.csv
+│   │   ├── shields.csv
+│   │   ├── proofing.csv
+│   │   └── common_armor_kits.csv
+│   └── magic/
+│       ├── occult_implements.csv
+│       └── sacred_relics.csv
 ├── tools/
 │   ├── validate_terms.py
 │   ├── validate_kits.py
@@ -407,17 +409,17 @@ Petrification, energy drain, curses, charm, sleep, drowning, disintegration, and
 
 ## REPLACE all physical weapon and armor tables
 
-Use the CSV files in this bundle as the sole data source:
+Use the canonical CSV files as the sole data source:
 
-- `melee_weapons.csv`
-- `ranged_weapons.csv`
-- `body_armor.csv`
-- `helmets.csv`
-- `arms_armor.csv`
-- `leg_armor.csv`
-- `shields.csv`
-- `proofing.csv`
-- `common_armor_kits.csv`
+- `data/equipment/melee_weapons.csv`
+- `data/equipment/ranged_weapons.csv`
+- `data/equipment/body_armor.csv`
+- `data/equipment/helmets.csv`
+- `data/equipment/arms_armor.csv`
+- `data/equipment/leg_armor.csv`
+- `data/equipment/shields.csv`
+- `data/equipment/proofing.csv`
+- `data/equipment/common_armor_kits.csv`
 
 Do not hand-copy stale v5 values. Generate formatted book tables from CSV.
 
@@ -477,7 +479,7 @@ Delete pistol-proof/musket-proof distinctions and close-range exceptions.
 
 ## REGENERATE common kits
 
-Use `common_armor_kits.csv`. Do not use v5 kit totals.
+Use `data/equipment/common_armor_kits.csv`. Do not use v5 kit totals.
 
 ---
 
@@ -492,7 +494,7 @@ Keep firearms distinct from bows:
 - cannot reload while Controlled, swimming, climbing, panicking, or otherwise unable to perform the listed actions.
 - firearm volley triggers morale as currently written.
 
-Use corrected firearm values from `ranged_weapons.csv`.
+Use corrected firearm values from `data/equipment/ranged_weapons.csv`.
 
 Keep +3 proofing. Delete range-dependent proofing.
 
@@ -653,7 +655,7 @@ The designer has established that expensive items may raise memory capacity, but
 
 # 15. Occult implements
 
-Use `occult_implements.csv` as the sole standard purchasable inventory.
+Use `data/magic/occult_implements.csv` as the sole standard purchasable inventory.
 
 ## Rules
 
@@ -692,7 +694,7 @@ Examples of forms: virge, rod, sceptre, mirror, bell, censer, staff, crozier, pr
 
 # 16. Sacred relics
 
-Use `sacred_relics.csv` as the sole standard purchasable inventory.
+Use `data/magic/sacred_relics.csv` as the sole standard purchasable inventory.
 
 ## Rules
 
@@ -977,10 +979,10 @@ rg -n "Reload N|recharge wound|Proofed|weight only" rules
 
 ```text
 Work in branch migration/v2.5-current.
-Read GEWINN_v2_5_to_current_CODEX_CHANGELOG.md and
-GEWINN_v2_5_to_current_CHANGE_MANIFEST.yaml completely before editing.
+Read migration/v2.5-current/GEWINN_v2_5_to_current_CODEX_CHANGELOG.md and
+migration/v2.5-current/GEWINN_v2_5_to_current_CHANGE_MANIFEST.yaml completely before editing.
 
-Treat data/*.csv as canonical values. Generate tables from them; do not hand-copy values.
+Treat data/equipment/*.csv and data/magic/*.csv as canonical values. Generate tables from them; do not hand-copy values.
 Preserve v2.5 voice, front matter, attribution, and all unaffected content.
 Use v5 only as a procedural scaffold.
 Delete all mechanics listed under Superseded Experiments.
