@@ -13,8 +13,8 @@
   and miracles; settle memory-expanding source items; recalculate starting
   packages/examples; decide Eureka and Divine Favour; rebuild character sheet
   and referee screen. See `docs/OPEN_QUESTIONS.md` after bootstrap.
-- **Last validation commit:** Not yet recorded at source selection; bootstrap
-  validation will be recorded in `docs/BOOTSTRAP_REPORT.md`.
+- **Last validation commit:** `chore: complete GEWINN repository bootstrap`.
+  The final fast-validation results are recorded in `docs/BOOTSTRAP_REPORT.md`.
 
 Do not merge the migration overlay into this source except in a later, explicitly
 scoped migration commit. Do not use an automated PDF text extraction as an
