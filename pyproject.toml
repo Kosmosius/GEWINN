@@ -1,0 +1,34 @@
+[project]
+name = "gewinn-tooling"
+version = "0.1.0"
+description = "Validation and reproducibility tooling for the GEWINN tabletop RPG"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.6",
+  "PyYAML>=6.0",
+]
+simulation = []
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "simulations/tests"]
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+extend-exclude = ["archive", "artifacts", "manuscript/generated"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+ignore = ["E501"]

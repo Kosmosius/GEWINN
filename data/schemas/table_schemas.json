@@ -1,0 +1,64 @@
+{
+  "tables": {
+    "data/equipment/melee_weapons.csv": {
+      "required_columns": ["Weapon", "Dice", "Type", "Weight_lb", "Slots", "Cost", "Notes"],
+      "name_column": "Weapon",
+      "dice_columns": ["Dice"],
+      "damage_value_columns": ["Type"]
+    },
+    "data/equipment/ranged_weapons.csv": {
+      "required_columns": ["Weapon", "Dice", "Type", "Weight_lb", "Slots", "Cost", "Reload", "Notes"],
+      "name_column": "Weapon",
+      "dice_columns": ["Dice"],
+      "damage_value_columns": ["Type"]
+    },
+    "data/equipment/body_armor.csv": {
+      "required_columns": ["Body Armor", "AC", "Slashing", "Piercing", "Bludgeoning", "Shot", "Burning", "Shocking", "Toxic", "Freezing", "Weight_lb", "Slots", "Cost", "Notes"],
+      "name_column": "Body Armor"
+    },
+    "data/equipment/helmets.csv": {
+      "required_columns": ["Helmet", "AC", "Slashing", "Piercing", "Bludgeoning", "Shot", "Burning", "Shocking", "Toxic", "Freezing", "Weight_lb", "Slots", "Cost", "Notes"],
+      "name_column": "Helmet"
+    },
+    "data/equipment/arms_armor.csv": {
+      "required_columns": ["Arms Armor", "AC", "Slashing", "Piercing", "Bludgeoning", "Shot", "Burning", "Shocking", "Toxic", "Freezing", "Weight_lb", "Slots", "Cost", "Notes"],
+      "name_column": "Arms Armor"
+    },
+    "data/equipment/leg_armor.csv": {
+      "required_columns": ["Leg Armor", "AC", "Slashing", "Piercing", "Bludgeoning", "Shot", "Burning", "Shocking", "Toxic", "Freezing", "Weight_lb", "Slots", "Cost", "Notes"],
+      "name_column": "Leg Armor"
+    },
+    "data/equipment/shields.csv": {
+      "required_columns": ["Shield", "AC", "Slashing", "Piercing", "Bludgeoning", "Shot", "Burning", "Shocking", "Toxic", "Freezing", "Weight_lb", "Slots", "Cost", "Notes"],
+      "name_column": "Shield"
+    },
+    "data/equipment/proofing.csv": {
+      "required_columns": ["Upgrade", "Effect", "Weight_lb", "Slots", "Cost", "Notes"],
+      "name_column": "Upgrade"
+    },
+    "data/equipment/common_armor_kits.csv": {
+      "required_columns": ["Kit", "Pieces", "Cost", "Weight_lb", "Slots", "AC_melee", "AC_missile", "Slashing", "Piercing", "Bludgeoning", "Shot", "Notes"],
+      "name_column": "Kit"
+    },
+    "data/magic/occult_implements.csv": {
+      "required_columns": ["Rating", "Clean_INT", "Hands", "Range_ft", "Reload_after_ranged", "Weight_lb", "Slots", "Cost", "Access", "Available_Types", "Notes"],
+      "name_column": "Rating",
+      "dice_columns": ["Rating"],
+      "damage_value_columns": ["Available_Types"]
+    },
+    "data/magic/sacred_relics.csv": {
+      "required_columns": ["Rating", "Clean_FTH", "Worn_DR", "Bestowed_DR_roll_once", "Weight_lb", "Slots", "Cost", "Access", "Available_Types", "Notes"],
+      "name_column": "Rating",
+      "dice_columns": ["Rating", "Bestowed_DR_roll_once"],
+      "damage_value_columns": ["Available_Types"]
+    }
+  },
+  "component_aliases": {
+    "Brigandine": "Brigandine / jack of plate",
+    "Cuirass": "Cuirass / breastplate",
+    "Full harness body": "Full harness",
+    "Armet/close helm": "Armet / close helm",
+    "Target/targe": "Target / targe",
+    "Mail sleeves/voiders": "Mail sleeves / voiders"
+  }
+}
