@@ -8,9 +8,9 @@
 
 ## Reproduction
 
-1. 
-2. 
-3. 
+1. [Setup]
+2. [Action]
+3. [Observed result]
 
 ## Expected and observed behavior
 
